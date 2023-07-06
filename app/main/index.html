@@ -6,12 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informative Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <h1>Hello world!</h1>
-
+<body class="bg-gray-900 text-white">
     <script src="./scripts/script.js"></script>
+    <div>
+        <nav class="bg-gray-800">
+            <ul class="flex">
+                <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
+                    <a href="#">Main page</a>
+                </li>
+                <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
+                    <a href="#game-list">Game list</a>
+                </li>
+                <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
+                    <a href="#">Your games</a>
+                </li>
+                <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
+                    <a href="#">AI</a>
+                </li>
+                <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
+                    <a href="#">Account</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container mx-auto mt-8" id="game-list" onload="elementLoaded('Gamelist')">
+        <h1>Game list</h1>
+        <p class="text-gray-300">Here you can find all the games that are available on our platform.</p><br>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            <div class="bg-gray-800 rounded-lg p-4">
+                <h3 class="text-white">Game 1</h3>
+                <p class="text-gray-300">Game description</p>
+                <img src="game1.jpg" alt="Game 1" class="mt-4 mb-2 w-full">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Go to game</button>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4">
+                <h3 class="text-white">Game 1</h3>
+                <p class="text-gray-300">Game description</p>
+                <img src="game1.jpg" alt="Game 1" class="mt-4 mb-2 w-full">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Go to game</button>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4">
+                <h3 class="text-white">Game 1</h3>
+                <p class="text-gray-300">Game description</p>
+                <img src="game1.jpg" alt="Game 1" class="mt-4 mb-2 w-full">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Go to game</button>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4">
+                <h3 class="text-white">Game 1</h3>
+                <p class="text-gray-300">Game description</p>
+                <img src="game1.jpg" alt="Game 1" class="mt-4 mb-2 w-full">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Go to game</button>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4">
+                <h3 class="text-white">Game 1</h3>
+                <p class="text-gray-300">Game description</p>
+                <img src="game1.jpg" alt="Game 1" class="mt-4 mb-2 w-full">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Go to game</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

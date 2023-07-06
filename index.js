@@ -35,7 +35,7 @@ app.whenReady().then(() => {
     setTimeout(function() {
         loadingWindow.close();
         win.show();
-    }, 3000);
+    }, 1500);
 });
 
 function createMainWindow(winWidth, winHeight) {

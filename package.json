@@ -6,6 +6,7 @@
         "electron": "^25.2.0"
     },
     "dependencies": {
-        "dotenv": "^16.3.1"
+        "dotenv": "^16.3.1",
+        "tailwindcss": "^3.3.2"
     }
 }
