@@ -8,6 +8,19 @@
     <title>Informative Gaming</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hidden {
+            visibility: hidden;
+            transition-duration: 0.3s;
+            transition: ease-out;
+        }
+        
+        .visible {
+            visibility: visible;
+            transition-duration: 0.3s;
+            transition: ease-in;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-900 text-white">
@@ -16,24 +29,34 @@
         <nav class="bg-gray-800">
             <ul class="flex">
                 <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
-                    <a href="#">Main page</a>
+                    <a href="#" onclick="showElement('main-page')">Main page</a>
                 </li>
                 <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
-                    <a href="#game-list">Game list</a>
+                    <a href="#" onclick="showElement('game-list')">Game list</a>
                 </li>
                 <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
-                    <a href="#">Your games</a>
+                    <a href="#" onclick="showElement('your-games')">Your games</a>
                 </li>
                 <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
-                    <a href="#">AI</a>
+                    <a href="#" onclick="showElement('ai')">AI</a>
                 </li>
                 <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
-                    <a href="#">Account</a>
+                    <a href="#" onclick="showElement('feedback')">Feedback</a>
+                </li>
+                <li class="py-2 px-4 hover:bg-gray-700 hover:text-white">
+                    <a href="#" onclick="showElement('account')">Account</a>
                 </li>
             </ul>
         </nav>
     </div>
-    <div class="container mx-auto mt-8" id="game-list" onload="elementLoaded('Gamelist')">
+    <!-- MAIN PAGE -->
+    <div class="" id="main-page">
+        <p>test</p>
+    </div>
+
+
+    <!-- GAME LIST -->
+    <div class="container mx-auto mt-8 hidden" id="game-list">
         <h1>Game list</h1>
         <p class="text-gray-300">Here you can find all the games that are available on our platform.</p><br>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
@@ -69,6 +92,26 @@
             </div>
         </div>
     </div>
+    <!-- YOUR GAMES -->
+    <div class="hidden" id="your-games">
+
+    </div>
+
+    <!-- AI -->
+    <div class="hidden" id="ai">
+
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="hidden" id="feedback">
+
+    </div>
+
+    <!-- ACCOUNT -->
+    <div class="hidden" id="account">
+
+    </div>
+
 </body>
 
 </html>
