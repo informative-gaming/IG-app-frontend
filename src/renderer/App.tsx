@@ -6,7 +6,7 @@ import './App.css';
 function Hello() {
   const [activeElement, setActiveElement] = useState('main-page');
 
-  const showElement = (elementId) => {
+  const showElement = (elementId: React.SetStateAction<string>) => {
     setActiveElement(elementId);
   };
 
